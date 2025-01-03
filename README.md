@@ -34,7 +34,7 @@ This term represents the harmful effects of taking too much of the drug, reducin
 
 ---
 
-### ** Adding Complexity: Oscillation Term**
+### **Adding Complexity: Oscillation Term**
 We also include an **oscillation term** to mimic variability in drug response:
 
 Oscillation Term = A * sin((2 * π * D) / P)
@@ -45,7 +45,7 @@ Where:
 
 This term introduces periodic fluctuations in effectiveness, simulating biological variability or external factors.
 
-### **4. Final Effectiveness Function**
+###  **Final Effectiveness Function**
 Combining the Hill equation with the toxicity and oscillation terms, the final effectiveness function is:
 
 E(D) = (E_max * D^n) / (K_m^n + D^n) - (D^2 / T) + A * sin((2 * π * D) / P)
