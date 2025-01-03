@@ -1,4 +1,4 @@
-# Drug efficiency and Gradient Descent optimizers
+# Drug Effectiveness and Gradient Descent optimizers
 
 This repository we will explore how different optimization algorithms of Gradient Descent ,the backbone of Machine Learning and Neural Networks, can be applied to determine the optimal drug dosage using the Hill equation.
 
