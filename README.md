@@ -84,6 +84,10 @@ In our project, to better understand the **loss** and **effectiveness** function
 - **Take a Range of Doses:** Consider various drug doses within a specific range.
 - **Plot the Loss Function:** Calculate and visualize the loss (negative effectiveness) for each dose.
 
+![efecitvenessdose](https://github.com/user-attachments/assets/d6db59d3-e7d8-4c80-9635-c8346647dd27)
+![lossdose](https://github.com/user-attachments/assets/01d9b845-2477-44fd-9b39-82af6de9bb7f)
+
+
  
 
 ## Contact
