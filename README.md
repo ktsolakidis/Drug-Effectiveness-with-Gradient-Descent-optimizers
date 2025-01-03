@@ -21,7 +21,7 @@ The Hill Equation depends on the following variables:
 
  In our example, we extend the basic Hill equation by introducing two additional terms: a toxicity term and an oscillation term. These modifications make the function more realistic and challenging to optimize, mimicking complex real-world scenarios. By doing so, we aim to test how well gradient descent and other optimization techniques perform, especially when faced with local minima and maxima.
 
-### ** Adding Complexity: Toxicity Term**
+### **Adding Complexity: Toxicity Term**
 We introduce a **toxicity term** to penalize high doses:
 
 Toxicity Term = (D^2) / T
