@@ -9,9 +9,7 @@ However, the optimization techniques and algorithms used here are the same found
 ###  Hill Equation
 The function we will work with, is the Hill Equation.
 
-\[
-E(D) = \frac{E_{\text{max}} \cdot D^n}{K_m^n + D^n}
-\]
+E(D) = (E_max * D^n) / (K_m^n + D^n)
 
 The Hill equation is a mathematical model used to describe the relationship between a drug's concentration and its effectiveness, commonly applied in pharmacology to study dose-response curves.
 
@@ -25,12 +23,12 @@ The Hill Equation depends on the following variables:
 
 ### ** Adding Complexity: Toxicity Term**
 We introduce a **toxicity term** to penalize high doses:
-\[
-\text{Toxicity Term} = \frac{D^2}{T}
-\]
+
+Toxicity Term = (D^2) / T
+
 Where:
-- \(D\): Drug dose.
-- \(T\): Toxicity scaling factor, determining how quickly the penalty increases.
+- (D): Drug dose.
+- (T): Toxicity scaling factor, determining how quickly the penalty increases.
 
 This term represents the harmful effects of taking too much of the drug, reducing effectiveness at higher doses.
 
@@ -38,28 +36,29 @@ This term represents the harmful effects of taking too much of the drug, reducin
 
 ### ** Adding Complexity: Oscillation Term**
 We also include an **oscillation term** to mimic variability in drug response:
-\[
-\text{Oscillation Term} = A \cdot \sin\left(\frac{2\pi D}{P}\right)
-\]
+
+Oscillation Term = A * sin((2 * π * D) / P)
+
 Where:
-- \(A\): Amplitude, controlling the size of the oscillations.
-- \(P\): Period, determining how frequently the oscillations occur.
+- (A): Amplitude, controlling the size of the oscillations.
+- (P): Period, determining how frequently the oscillations occur.
 
 This term introduces periodic fluctuations in effectiveness, simulating biological variability or external factors.
 
 ### **4. Final Effectiveness Function**
 Combining the Hill equation with the toxicity and oscillation terms, the final effectiveness function is:
-\[
-E(D) = \frac{E_{\text{max}} \cdot D^n}{K_m^n + D^n} - \frac{D^2}{T} + A \cdot \sin\left(\frac{2\pi D}{P}\right)
-\]
+
+E(D) = (E_max * D^n) / (K_m^n + D^n) - (D^2 / T) + A * sin((2 * π * D) / P)
+
+
 Where:
-- \(E(D)\): The overall effectiveness as a function of dose (\(D\)).
-- \(E_{\text{max}}\): Maximum possible effect.
-- \(K_m\): Dose at half-maximal effectiveness.
-- \(n\): Hill coefficient.
-- \(T\): Toxicity scaling factor.
-- \(A\): Amplitude of oscillations.
-- \(P\): Period of oscillations.
+- (E(D)): The overall effectiveness as a function of dose (\(D\)).
+- (E_max): Maximum possible effect.
+- (K_m): Dose at half-maximal effectiveness.
+- (n): Hill coefficient.
+- (T): Toxicity scaling factor.
+- (A): Amplitude of oscillations.
+- (P): Period of oscillations.
 
 ---
 
@@ -86,6 +85,9 @@ In our project, to better understand the **loss** and **effectiveness** function
 
 ![efecitvenessdose](https://github.com/user-attachments/assets/d6db59d3-e7d8-4c80-9635-c8346647dd27)
 ![lossdose](https://github.com/user-attachments/assets/01d9b845-2477-44fd-9b39-82af6de9bb7f)
+
+
+Let's start coding and see how we can find the optimal dose!
 
 
  
