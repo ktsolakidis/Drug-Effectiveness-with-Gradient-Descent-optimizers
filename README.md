@@ -71,7 +71,7 @@ By including toxicity and oscillations:
 For the purpose of this project, all terms will remain fixed, except for the **drug dose (\(D\))**, which we will optimize to find its optimal value. This allows us to focus solely on determining the most effective dose while assuming the other parameters are stable and pre-defined.
 
 ### The Gradient Descent Optimization Algorithms We Will Explore:
-- **Momentum:** Builds up speed by adding some of the previous step’s direction to the current one, helping to move faster and avoid getting stuck in small dips.  
+- **Momentum:** Builds up speed by adding some of the previous step’s direction to the current one, helping to move faster and avoid getting stuck in local minimas.  
 - **Adagrad:** Adjusts the step size for each parameter based on how much it has changed in the past. Parameters that have already made large changes take smaller steps, while those that haven’t changed much take larger steps, making it useful for handling uneven data.  
 - **RMSprop:** Keeps track of how steep the changes are for each parameter and adjusts the step size accordingly, ensuring the learning stays steady and controlled.  
 - **Adam:** Combines the benefits of Momentum and RMSprop, moving quickly when it’s safe and slowing down when precision is needed, making it reliable for many tasks.  
